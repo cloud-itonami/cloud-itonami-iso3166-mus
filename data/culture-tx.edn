@@ -1,0 +1,14 @@
+;; data/culture-tx.edn — DataScript tx-data derived from src/culture/facts.cljc
+;; `culture.facts/catalog` (ADR-2607171400 addendum 2, Wave 1 country-level).
+;; Same shape across every cloud-itonami-iso3166-* sibling. Do not hand-edit;
+;; regenerate from the catalog.
+
+[
+#:culture{:url "https://en.wikipedia.org/wiki/Mauritian_cuisine", :id "mus.dish.dalpuri", :kind :dish, :name-local "Dholl puri", :country "MUS", :retrieved-at "2026-07-17", :summary "Cooked flatbread dish stuffed with yellow split peas, served with pea curry and tomato sauce, per the Mauritian cuisine article.", :name "Dalpuri", :url-provenance :wikipedia-en}
+#:culture{:url "https://en.wikipedia.org/wiki/Mauritian_cuisine", :id "mus.dish.gato-piment", :kind :dish, :name-local "Gateau piment", :country "MUS", :retrieved-at "2026-07-17", :summary "Chilli fritters made of split peas combined with chilli, per the Mauritian cuisine article.", :name "Gato Piment", :url-provenance :wikipedia-en}
+#:culture{:id "mus.dish.rougail", :name "Rougail", :country "MUS", :kind :dish, :summary "Tomato sauce cooked with onions, garlic, chillies, ginger and spices, typically eaten with fish, meat and vegetables, per the Mauritian cuisine article.", :url "https://en.wikipedia.org/wiki/Mauritian_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mus.beverage.green-island-rum", :name "Green Island Rum", :country "MUS", :kind :beverage, :summary "Rum locally manufactured in Mauritius, usually mixed with cold Sprite and a piece of lemon, per the Mauritian cuisine article.", :url "https://en.wikipedia.org/wiki/Mauritian_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mus.beverage.alouda", :name "Alouda", :country "MUS", :kind :beverage, :summary "Sweet, cold Mauritian beverage made with milk, tukmaria (basil seeds) and slices of coloured agar-agar jelly, per the Mauritian cuisine article.", :url "https://en.wikipedia.org/wiki/Mauritian_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mus.heritage.aapravasi-ghat", :name "Aapravasi Ghat", :country "MUS", :kind :heritage, :summary "Immigration depot in Port Louis, Mauritius, where about half a million Indian indentured labourers passed through between 1849 and 1923; designated a UNESCO World Heritage Site in 2006.", :url "https://en.wikipedia.org/wiki/Aapravasi_Ghat", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mus.heritage.le-morne-brabant", :name "Le Morne Brabant", :country "MUS", :kind :heritage, :summary "Peninsula and basaltic monolith at the southwestern tip of Mauritius, inscribed on the UNESCO World Heritage List in 2008 for its cultural significance related to slavery and maroon history.", :url "https://en.wikipedia.org/wiki/Le_Morne_Brabant", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+]
