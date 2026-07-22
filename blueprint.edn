@@ -6,4 +6,31 @@
  :itonami.blueprint/governor :market-entry-compliance-governor
  :itonami.blueprint/robotics false
  :itonami.blueprint/required-technologies [:identity :forms :dmn :bpmn :audit-ledger]
- :itonami.blueprint/status :public-oss}
+ :itonami.blueprint/status :public-oss
+ :itonami.blueprint/maturity :implemented
+ :itonami.blueprint/implemented-slice
+ "src/marketentry/{facts,governor,store,registry,marketentryllm,operation,phase,sim}.cljc
+  -- MarketEntry-LLM (mock advisor) sealed behind a langgraph-clj
+  StateGraph (intake -> advise -> govern -> decide -> [request-approval] ->
+  commit|hold), censored by a 7-check Market-Entry Compliance Governor
+  (spec-basis, evidence-incomplete, cbris-registration-missing [flagship],
+  engagement-fee-mismatch, eprocurement-registration-unverified,
+  confidence-floor/actuation-gate, already-drafted/already-submitted),
+  Store protocol with MemStore + DatomicStore (built on
+  io.github.kotoba-lang/langchain-store, not a hand-rolled enc/dec*
+  codec), 0->3 phase rollout gate, and an append-only audit ledger.
+  `:filing/draft`/`:filing/submit` never auto-commit at any phase.
+  Facts catalog (src/marketentry/facts.cljc) is grounded exclusively in
+  the verified MUS dossier: PPO (Procurement Policy Office,
+  https://ppo.govmu.org/), Public Procurement Act 2006 (Act 33 of
+  2006), the PPO e-Procurement System (mandatory registration since 28
+  September 2015, https://publicprocurement.govmu.org/), and the
+  Corporate and Business Registration Department (CBRD) via the
+  Corporate and Business Registration Integrated System (CBRIS --
+  Certificate of Incorporation + Business Registration Number). Test
+  suite: test/marketentry/{facts,governor_contract,store_contract,
+  registry,phase}_test.clj -- one test per governor rule, MemStore ≡
+  DatomicStore parity, pure-function registry coverage, and full
+  StateGraph end-to-end exercise for both a commit path
+  (clean-intake-auto-commits) and a hold path
+  (fabricated-jurisdiction-is-held / the 4 HARD-hold rule tests)."}
