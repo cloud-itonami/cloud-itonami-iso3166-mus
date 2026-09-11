@@ -14,9 +14,9 @@ append-only audit ledger and a 0→3 phase rollout gate. See
 `docs/operator-guide.md` for the human-operator workflow.
 
 ```
-clojure -M:dev:test   # run the full test suite
-clojure -M:lint       # clj-kondo, errors fail
-clojure -M:dev:run    # demo driver (marketentry.sim)
+kbb -M:dev:test   # run the full test suite
+kbb -M:lint       # clj-kondo, errors fail
+kbb -M:dev:run    # demo driver (marketentry.sim)
 ```
 
 Regulatory grounding (verified against `.govmu.org` government domains —
