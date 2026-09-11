@@ -3,7 +3,7 @@
 Human-gated filing only. Every `:filing/draft`/`:filing/submit`
 proposal always pauses for a human market-entry operator's approval —
 there is no rollout phase in which either auto-commits (see
-`src/marketentry/phase.cljc`).
+`src/marketentry/phase.cljk`).
 
 ## Portal / channel
 
@@ -53,7 +53,7 @@ operator must fix the underlying engagement record (verify the CBRIS
 registration, correct the fee, verify the e-Procurement registration)
 before resubmitting, not approve past the governor.
 
-## Required evidence checklist (per `src/marketentry/facts.cljc`)
+## Required evidence checklist (per `src/marketentry/facts.cljk`)
 
 - CBRIS company registration record (Certificate of Incorporation +
   Business Registration Number)
