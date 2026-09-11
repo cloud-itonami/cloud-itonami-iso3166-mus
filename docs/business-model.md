@@ -34,7 +34,7 @@ Mauritian public-sector contracts, who need to track:
 1. **Engagement intake** — normalize the operator's own case data
    (operator name, engagement fee terms). No new facts invented.
 2. **Jurisdiction assessment** — hand back the MUS evidence checklist
-   from `src/marketentry/facts.cljc`, always citing an official source
+   from `src/marketentry/facts.cljk`, always citing an official source
    (`ppo.govmu.org`). A jurisdiction not in the catalog gets NO
    checklist — the actor states plainly that it has no official
    spec-basis rather than guessing.

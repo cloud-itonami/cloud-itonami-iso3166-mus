@@ -20,7 +20,7 @@
   io.github.kotoba-lang/langchain-store, not a hand-rolled enc/dec*
   codec), 0->3 phase rollout gate, and an append-only audit ledger.
   `:filing/draft`/`:filing/submit` never auto-commit at any phase.
-  Facts catalog (src/marketentry/facts.cljc) is grounded exclusively in
+  Facts catalog (src/marketentry/facts.cljk) is grounded exclusively in
   the verified MUS dossier: PPO (Procurement Policy Office,
   https://ppo.govmu.org/), Public Procurement Act 2006 (Act 33 of
   2006), the PPO e-Procurement System (mandatory registration since 28
